@@ -90,7 +90,7 @@ function getHash()
     }
     
 	
-    link.setAttribute('download', 'absquare.png');
+    link.setAttribute('download', 'absquare_' + Date.now() + '.png');
     link.setAttribute('href', c.toDataURL("image/png").replace("image/png", "image/octet-stream"));
     downloadLink.style.display = 'block';
     // link.click();
