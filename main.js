@@ -73,7 +73,10 @@ function getHash()
 
 	var ctx = c.getContext("2d");
 	var barH = 32; 
-	var crX, crY
+    var crX, crY
+    
+    let link = document.getElementById('link');
+    let downloadLink = document.getElementById('abstra-body-download');
  
 	for (var i = 0; i < myColouredMatrix.length; i++) {
 		for (var j = 0; j < myColouredMatrix[0].length; j++) {
@@ -84,18 +87,11 @@ function getHash()
 			ctx.fillStyle = myColouredMatrix[i][j];
 			ctx.fill();
 		}
-	}
-	/*
-	c.toBlob(function(blob) {
-	    var newImg = document.createElement('img'),
-		    url = URL.createObjectURL(blob);
-
-	    newImg.onload = function() {
-		    // no longer need to read the blob so it's revoked
-		    URL.revokeObjectURL(url);
-	    };
-
-	    newImg.src = url;
-	    document.body.appendChild(newImg);
-    })*/
+    }
+    
+	
+    link.setAttribute('download', 'absquare.png');
+    link.setAttribute('href', c.toDataURL("image/png").replace("image/png", "image/octet-stream"));
+    downloadLink.style.display = 'block';
+    // link.click();
 }
