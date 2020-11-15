@@ -20,6 +20,11 @@
     font-size: 1vw;
 }
 
+.abstra-body__image__canvas
+{
+    border:1px solid #d3d3d3;    
+}
+
 .abstra-body__header,
 .abstra-body__textbox,
 .abstra-body__button,
@@ -27,5 +32,24 @@
 .abstra-body__footer
 {
     text-align: center;
+}
+
+@media (orientation: portrait) {
+
+    .abstra-body__header
+    {
+        font-size: 6vw;
+    }
+
+    .abstra-body__manual
+    {
+        font-size: 1vw;
+    }
+
+    .abstra-body__image__canvas
+    {
+
+    }
+
 }
 
