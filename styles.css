@@ -33,11 +33,7 @@
     height: 15%;
 }
 
-.abstra-body__button__button
-{
-    width: 30vw;
-    height: 5vh;
-}
+
 
 
 /* Desktop rules */
@@ -62,6 +58,12 @@
     {
         height: 42vh;
         width: 42vh;
+    }
+    
+    .abstra-body__button__button
+    {
+        width: 30vw;
+        height: 5vh;
     }
 }
 
