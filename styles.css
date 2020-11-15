@@ -1,0 +1,25 @@
+.abstra-body
+{
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: antiquewhite;
+    width: 80vw;
+    height: 100vh;
+}
+
+.abstra-body__header 
+{
+    font-size: 5vw;
+}
+
+.abstra-body__header,
+.abstra-body__textbox,
+.abstra-body__button,
+.abstra-body__image,
+.abstra-body__footer
+{
+    text-align: center;
+}
+
