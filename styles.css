@@ -24,7 +24,6 @@
 .abstra-body__footer
 {
     text-align: center;
-    margin: 1%;
 }
 
 .abstra-body__textbox__textarea
@@ -59,6 +58,16 @@
         height: 42vh;
         width: 42vh;
     }
+
+    .abstra-body__header,
+    .abstra-body__textbox,
+    .abstra-body__button,
+    .abstra-body__image,
+    .abstra-body__download,
+    .abstra-body__footer
+    {
+        margin: 1%;
+    }  
     
     .abstra-body__button__button
     {
@@ -67,8 +76,14 @@
     }
 }
 
-/* Smartphone rules */
+
+/* Desktop rules */
 @media (orientation: portrait) {
+    .abstra-body 
+    {
+        width: 95%;
+    }
+
     .abstra-body__header
     {
         font-size: 6vw;
@@ -89,5 +104,21 @@
     {
         height: 60vw;
         width: 60vw;
+    }
+
+    .abstra-body__header,
+    .abstra-body__textbox,
+    .abstra-body__button,
+    .abstra-body__image,
+    .abstra-body__download,
+    .abstra-body__footer
+    {
+        margin: 2%;
+    }
+
+    .abstra-body__button__button
+    {
+        width: 30vw;
+        height: 5vw;
     }
 }
