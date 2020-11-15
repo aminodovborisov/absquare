@@ -23,20 +23,21 @@
 					<li>Get abstract square in shades of blue, based on your text!
 				</ol>
 			</div>
-			<p>
-            <div class="abstra-body__textbox">
-			    <textarea name="textToHash" id="textToHash" cols="80" rows="6"></textarea>
+			<div class="abstra-body__textbox">
+			    <textarea name="textToHash" id="textToHash" cols="80" rows="6" class="abstra-body__textbox__textarea"></textarea>
             </div>
-            <p>
             <div class="abstra-body__button">    
-			    <button name="getHash" onclick="getHash()">Generate!</button>
+			    <button name="getHash" onclick="getHash()" class="abstra-body__button__button">Generate!</button>
             </div>
-            <p>
             <div class="abstra-body__image">    
-			    <canvas id="myCanvas" width="256" height="256" style="border:1px solid #d3d3d3;">
+			    <canvas id="myCanvas" width="256" height="256" class="abstra-body__image__canvas">
             </div>
-            <p>
+            <div class="abstra-body__download" style="display: none;" id="abstra-body-download">
+                <a id="link">Download</a>
+            </div>
+            <div>
             <footer class="abstra-body__footer">
+                
                 Created by <a href="https://github.com/aminodovborisov">Aleksei Aminodov-Borisov</a>
                 <br>
                 Based on SHA-256 hash function (<a href="https://en.wikipedia.org/wiki/SHA-2">Wiki</a>).
