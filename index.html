@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Sixteen shades of blue</title>
+		
+		<!-- Link to hash generator -->
+		<script src="sha3.min.js"></script>
+		<script src="main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<div class="abstra-body">
+			<header class="abstra-body__header">Sixteen Shades Of Blue</header>
+			<!-- This code was typed by our cat: 
+			p7y555555555555555555555666666666666666666666999999999999999998888888888
+			99999999999999iiiiiiiiic3ek
+			-->
+			<div class="abstra-body__manual">
+				<ol>
+					<li>Enter any text into textbox below,
+					<li>Press "Generate" button,
+					<li>Get abstract square in shades of blue, based on your text!
+				</ol>
+			</div>
+			<p>
+            <div class="abstra-body__textbox">
+			    <textarea name="textToHash" id="textToHash" cols="80" rows="6"></textarea>
+            </div>
+            <p>
+            <div class="abstra-body__button">    
+			    <button name="getHash" onclick="getHash()">Generate!</button>
+            </div>
+            <p>
+            <div class="abstra-body__image">    
+			    <canvas id="myCanvas" width="256" height="256" style="border:1px solid #d3d3d3;">
+            </div>
+            <p>
+            <footer class="abstra-body__footer">
+                Created by <a href="https://github.com/aminodovborisov">Aleksei Aminodov-Borisov</a>
+                <br>
+                Based on SHA-256 hash function (<a href="https://en.wikipedia.org/wiki/SHA-2">Wiki</a>).
+                <br>
+                JavaScript SHA-256 realization by <a href="https://github.com/emn178/">Chen, Yi-Cyuan</a>            
+            </footer>
+        </div>
+	</body>
+</html>
