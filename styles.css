@@ -65,18 +65,17 @@
     }
 }
 
-
-/* Desktop rules */
+/* Smartphone rules */
 @media (orientation: portrait) {
     .abstra-body__header
     {
-        font-size: 6vh;
+        font-size: 6vw;
     }
 
     .abstra-body__manual,
     .abstra-body__download
     {
-        font-size: 2.2vh;
+        font-size: 2.2vw;
     }
 
     .abstra-body__manual
@@ -86,7 +85,7 @@
 
     .abstra-body__image__canvas
     {
-        height: 42vh;
-        width: 42vh;
+        height: 60vw;
+        width: 60vw;
     }
 }
